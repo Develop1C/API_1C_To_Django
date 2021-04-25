@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Адрес" id="1">
+			<DataPath>Адрес</DataPath>
+			<ContextMenu name="АдресКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<Button name="ПолучитьДанные" id="4">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПолучитьДанные</CommandName>
+			<ExtendedTooltip name="ПолучитьДанныеРасширеннаяПодсказка" id="5"/>
+		</Button>
+		<Button name="УдалитьДокумент" id="6">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.УдалитьДокумент</CommandName>
+			<ExtendedTooltip name="УдалитьДокументРасширеннаяПодсказка" id="7"/>
+		</Button>
+		<Button name="ДанныеИзДокумента" id="8">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ДанныеИзДокумента</CommandName>
+			<ExtendedTooltip name="ДанныеИзДокументаРасширеннаяПодсказка" id="9"/>
+		</Button>
+		<Button name="ДанныеИзСправочника" id="10">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ДанныеИзСправочника</CommandName>
+			<ExtendedTooltip name="ДанныеИзСправочникаРасширеннаяПодсказка" id="11"/>
+		</Button>
+		<Button name="ДобавитьДанные" id="12">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ДобавитьДанные</CommandName>
+			<ExtendedTooltip name="ДобавитьДанныеРасширеннаяПодсказка" id="13"/>
+		</Button>
+		<Button name="ИзменитьДанные" id="14">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ИзменитьДанные</CommandName>
+			<ExtendedTooltip name="ИзменитьДанныеРасширеннаяПодсказка" id="15"/>
+		</Button>
+		<Button name="УдалитьДанные" id="16">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.УдалитьДанные</CommandName>
+			<ExtendedTooltip name="УдалитьДанныеРасширеннаяПодсказка" id="17"/>
+		</Button>
+		<Button name="ЗаписатьДанные" id="18">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ЗаписатьДанные</CommandName>
+			<ExtendedTooltip name="ЗаписатьДанныеРасширеннаяПодсказка" id="19"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.Обработка1</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Адрес" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПолучитьДанные" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПолучитьДанные</Action>
+		</Command>
+		<Command name="УдалитьДокумент" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить документ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить документ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьДокумент</Action>
+		</Command>
+		<Command name="ДанныеИзДокумента" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные из документа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные из документа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДанныеИзДокумента</Action>
+		</Command>
+		<Command name="ДанныеИзСправочника" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные из справочника</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные из справочника</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДанныеИзСправочника</Action>
+		</Command>
+		<Command name="ДобавитьДанные" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьДанные</Action>
+		</Command>
+		<Command name="ИзменитьДанные" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИзменитьДанные</Action>
+		</Command>
+		<Command name="УдалитьДанные" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьДанные</Action>
+		</Command>
+		<Command name="ЗаписатьДанные" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьДанные</Action>
+		</Command>
+	</Commands>
+</Form>
